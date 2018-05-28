@@ -1,0 +1,48 @@
+<head>
+</head>
+<body>
+<canvas width="500px" height="500px" >
+</canvas>
+<script>
+	var plansza = document.querySelector('canvas');
+	var ctx = plansza.getContext('2d');
+	var k = new Kolko(100,100,25,"red",1,1)
+	var color;
+	ctx.beginPath();
+	
+	function random_rgba() {
+    var o = Math.round, r = Math.random, s = 255;
+    return 'rgb(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s)  + ')';
+}
+
+
+	
+function random(min,max){
+	return Math.random()*(max-min)+min;
+}	
+
+for(;x>0;x--)
+{
+//var color = ;
+arr[x]=new Kolko(random(0,500),random(0,500),random(5,30),random_rgba(),random(1,10),random(1,10));
+}
+//color = random_rgba();
+
+	
+function Kolko(x,y,r,color,vx,vy)
+{   
+   
+	this.x=x;
+	this.y=y;
+	this.r=r;
+	this.color=color;
+	this.vy=vy;
+	this.vx=vx;
+}
+
+
+
+
+</script>
+</body>
+</html>
